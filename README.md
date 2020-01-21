@@ -1,4 +1,4 @@
-# QR_College_Faculty_Attendance_Management_System
+# QR_College_Student_Attendance_Management_System
 It is a web based application. A system that takes down Students attendance using QR code. 
 Every student is provided with a card containing a unique ID. 
 Students just have to scan their cards in front of webcam or smartphones and the system notes down their 
