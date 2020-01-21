@@ -42,10 +42,7 @@ CREATE TABLE `admin_info` (
 -- Dumping data for table `admin_info`
 --
 
-INSERT INTO `admin_info` (`admin_id`, `admin_name`, `admin_dept`, `admin_gen`, `email`, `password`, `otp`) VALUES
-(2, 'John di', 1, 'M', 'montoshrai666@gmail.com', 'bW8=', '1450194733'),
-(3, 'baker', 1, 'M', 'bakerlang777@gmail.com', 'bW9udG9zaA==', ''),
-(4, 'ritish', 1, 'M', 'sangyal.tmg@gmail.com', 'bW9udG9zaA==', '');
+
 
 -- --------------------------------------------------------
 
@@ -65,10 +62,6 @@ CREATE TABLE `attendance_info` (
 -- Dumping data for table `attendance_info`
 --
 
-INSERT INTO `attendance_info` (`record_id`, `std_id`, `logbook_id`, `attended`, `atten_taken`) VALUES
-(115, 112345, 11, 3, '2018-12-12'),
-(116, 170441, 12, 2, '2018-12-13'),
-(117, 112345, 13, 9, '2018-12-13');
 
 -- --------------------------------------------------------
 
@@ -87,13 +80,7 @@ CREATE TABLE `course` (
 -- Dumping data for table `course`
 --
 
-INSERT INTO `course` (`course_id`, `course_name`, `duration`, `dept_id`) VALUES
-(1, 'MCA', 0, 1),
-(3, 'BCA', 0, 1),
-(4, 'PGDCA', 0, 1),
-(5, 'BscHNT', 0, 1),
-(6, 'MTech', 0, 1),
-(7, 'png', 0, 1);
+
 
 -- --------------------------------------------------------
 
@@ -110,11 +97,6 @@ CREATE TABLE `department` (
 -- Dumping data for table `department`
 --
 
-INSERT INTO `department` (`dept_id`, `dept_name`) VALUES
-(1, 'Computer Science '),
-(2, 'Music'),
-(3, 'environment'),
-(4, 'management');
 
 -- --------------------------------------------------------
 
@@ -137,9 +119,6 @@ CREATE TABLE `faculty_info` (
 -- Dumping data for table `faculty_info`
 --
 
-INSERT INTO `faculty_info` (`faculty_id`, `faculty_name`, `dept`, `gender`, `email`, `otp`, `password`, `status`) VALUES
-(1, 'MONTOSH', 1, 'M', 'montoshrai666@gmail.com', '398469935', 'bW9udG9zaA==', 1),
-(2, 'Dahun', 3, 'M', 'montoshrai8@gmail.com', '', 'bW9udG9zaA==', 1);
 
 -- --------------------------------------------------------
 
@@ -161,10 +140,7 @@ CREATE TABLE `faculty_subject` (
 -- Dumping data for table `faculty_subject`
 --
 
-INSERT INTO `faculty_subject` (`fsub_id`, `faculty_id`, `course_id`, `sub_id`, `std_batch`, `year_of_assign`, `session`) VALUES
-(2, 1, 1, 2, 20182020, 2018, 2),
-(3, 1, 2, 1, 20172018, 2019, 1),
-(4, 1, 1, 2, 20172020, 2018, 2);
+
 
 -- --------------------------------------------------------
 
@@ -190,13 +166,6 @@ CREATE TABLE `log_book` (
 -- Dumping data for table `log_book`
 --
 
-INSERT INTO `log_book` (`logbook_id`, `faculty_id`, `time_from`, `time_to`, `allowed_hr`, `course_id`, `sub_id`, `std_batch`, `total_class`, `date`, `sessions`) VALUES
-(11, 1, '09:30', '12:30', '10:00', 1, 2, 20182020, 3, '2018-12-12', 2),
-(12, 1, '15:00', '17:00', '15:00', 1, 2, 20172020, 2, '2018-12-13', 2),
-(13, 1, '22:20', '12:30', '23:00', 1, 2, 20172020, 9, '2018-12-13', 2),
-(14, 1, '10:20', '12:30', '11:00', 1, 2, 20172020, 2, '2018-12-13', 2),
-(15, 1, '', '', '', 2, 1, 20172018, 0, '2019-02-24', 1),
-(16, 1, '', '', '', 2, 1, 20172018, 0, '2019-08-09', 1);
 
 -- --------------------------------------------------------
 
@@ -218,21 +187,7 @@ CREATE TABLE `student_info` (
 -- Dumping data for table `student_info`
 --
 
-INSERT INTO `student_info` (`std_id`, `std_name`, `std_dept`, `std_course`, `std_batch`, `std_gender`, `std_dob`) VALUES
-(112345, 'hello', 1, 1, '20172019', 'M', '2018-11-01'),
-(133455, 'sdfdxfgfch', 1, 1, '20172019', 'M', '2018-11-09'),
-(150616, 'LN', 1, 3, '20172019', 'F', '1995-02-02'),
-(170441, 'aoakum jamir', 1, 1, '20172019', 'M', '1994-07-31'),
-(170458, 'kyntiew', 1, 1, '20172019', 'M', '2018-11-09'),
-(170616, 'mo', 1, 1, '20172019', 'M', '2018-11-11'),
-(170961, 'lolly', 1, 1, '20182020', 'M', '2018-11-03'),
-(170999, 'hello', 1, 1, '20172020', 'M', '2018-12-07'),
-(174545, 'Deingait lang pyrtuh', 1, 1, '20172019', 'M', '2018-11-14'),
-(222222, 'huh', 1, 4, '20172019', 'M', '2018-12-02'),
-(555555, 'hello', 1, 1, '20172019', 'M', '2018-11-15'),
-(777777, 'hello', 1, 3, '20182020', 'M', '2018-12-15'),
-(999999, 'baker', 1, 3, '20172019', 'M', '2018-12-15'),
-(1702997, 'mjhxsa', 1, 4, '20172020', 'M', '2018-12-01');
+
 
 -- --------------------------------------------------------
 
@@ -250,12 +205,7 @@ CREATE TABLE `subject` (
 -- Dumping data for table `subject`
 --
 
-INSERT INTO `subject` (`sub_id`, `sub_name`, `course_id`) VALUES
-(2, 'c==', 1),
-(3, 'Computer Graphic', 1),
-(4, 'C++', 3),
-(5, 'PHP', 1),
-(6, 'j2ee', 1);
+
 
 --
 -- Indexes for dumped tables
